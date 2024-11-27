@@ -3,39 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/css/home-page-styles.css">
+    <script src="src/js/card-hover-animation.js" defer></script>
     <title>Multiverse Spider Man</title>
 
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/estilos.css">
+    
 </head>
 <body>
     <main class="conteiner">
         <section class="comteudo">
-            <header class="menu-prencipal">
+            <nav class="menu">
                 <ul>
-                    <li>HOME</li>
-                    <li>TOBEY MAGUIRE</li>
-                    <li>
-                        <img src="src/img/Spider-Man.png" alt="Icon Spider-Man">
+                    <li class="menu-item">
+                        <a href="#">HOME</a>
                     </li>
-                    <li>TOM HOLLAND</li>
-                    <li>ANDREW GARFIELD</li>
+                    <li>
+                        <a href="#">TOBEY MAGUIRE</a>
+                    </li>
+                    <li class="menu-icon">
+                        <img src="src/img/icons/Spider-Man.png" alt="Icon Spider-Man">
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">TOM HOLLAND</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">ANDREW GARFIELD</a>
+                    </li>
                 </ul>
-            </header>
+            </nav>
 
             <section class="secao-cards">
-                <div class="card-left">
-                    <img src="" alt="">
-                </div>
-                <div class="card-centro">
-                    <img src="" alt="">
-                </div>
-                <div class="card-right">
-                    <img src="" alt="">
-                </div>
+                <a href="#" class="card-left card-estilo" id="spider-man-01">
+                    
+                        <img class="card-background" src="src/img/pic-sm-bg-01.jpg" >
+                        <img class="card-img" src="src/img/spider-man-01.png" alt="Tobey Maguire">
+                        <h2 class="card-title">Tobey Maguire</h2>
+                   
+                </a>
+
+                <a href="#" class="card-estilo" id="spider-man-02">
+                    
+                <img class="card-background" src="src/img/pic-sm-bg-02.jpg">
+                <img class="card-img"  src="src/img/spider-man-02.png"  alt="Tom Holand">
+                <h2 class="card-title">Tom Holand</h2>
+           
+                </a>
+
+                <a href="#" class="card-right card-estilo" id="spider-man-03">
+                    
+                <img class="card-background" src="src/img/pic-sm-bg-03.jpg" >
+                <img class="card-img"  src="src/img/spider-man-03.png" alt="Andrew Garfield">
+                <h2 class="card-title">Andrew Garfield</h2>
+           
+                </a>
+                
 
 
             </section>
+            <div class="controller">
+                <div class="controller-button">
+                    01
+                </div>
+                <div class="controller-button">
+                    02
+                </div>
+                <div class="controller-button">
+                    03
+                </div>
+                <div class="controller-line"></div>
+            </div>
         </section>
     </main>
     
