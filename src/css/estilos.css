@@ -2,22 +2,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.conteiner {
-    /* width: 100%;
-    height: 100vh;
-    background-color: #B9001F; */
-    /* top: 6633px;
-    left: 22242px;
-    gap: 0px;
-    opacity: 0px; */
-    /* font-family: "Palanquin Dark", sans-serif; */
+
+
+
+
+.background-spiderman-01-01{
+    background: url('../img/spiderman-tobey/movie-01/background.png') center center no-repeat;
+    background-size: cover;
+}
+.background-spiderman-01-02{
+    background: url('../img/spiderman-tobey/movie-02/background.png') center center no-repeat;
+    background-size: cover;
+}
+.background-spiderman-01-03{
+    background: url('../img/spiderman-tobey/movie-03/background.png') center center no-repeat;
+    background-size: cover;
 }
 
-/* .conteiner .comteudo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
+
+.background-spiderman-02-01{
+    background: url('../img/spiderman-andrew/movie-01/background.png') center center no-repeat;
+    background-size: cover;
+}
+.background-spiderman-02-02{
+    background: url('../img/spiderman-andrew/movie-02/background.png') center center no-repeat;
+    background-size: cover;
+}
+
+/* Tom   Holand*/
+.background-spiderman-03-01{
+    background: url('../img/spiderman-tom/movie-01/background.png') center center no-repeat;
+    background-size: cover;
+}
+.background-spiderman-03-02{
+    background: url('../img/spiderman-tom/movie-02/background.png') center center no-repeat;
+    background-size: cover;
+}
+.background-spiderman-03-03{
+    background: url('../img/spiderman-tom/movie-03/background.png') center center no-repeat;
+    background-size: cover;
+}
 
 
 

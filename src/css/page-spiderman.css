@@ -1,9 +1,10 @@
 @import  url('reset.css');
 @import url('estilos.css');
+@import url('componemtes/_navegation.css');
 
 body {
-    background: url('../img/spiderman-tobey/movie-01/background.png') center center no-repeat;
-    background-size: cover;
+    /* background: url('../img/spiderman-tobey/movie-01/background.png') center center no-repeat;
+    background-size: cover; */
 }
 .wrapper {
     display: flex;
@@ -11,6 +12,46 @@ body {
     flex-flow: row nowrap;
 }
 
+.wrapper video{
+    position: fixed;
+    width: 100%;
+}
+
+.menu{
+    margin-left: 58%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: absolute;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.322);
+    padding: 0 1%;
+    border-radius: 25%;
+    height: 7rem;
+}
+.menu ul{
+    width: 527px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+
+    /* width: 787px; */
+    list-style: none;
+    /* margin-top: 32px; */
+    
+    position: relative;
+}
+/* .menu ul li:hover{
+    color: #E71418;
+    background-color: #E71418;
+    padding: 1%;
+    border-radius: 15%;
+} */
 .aside-column {
     width: 100px;
     height: 100%;
@@ -20,77 +61,18 @@ body {
     align-items: center;
 }
 
-.navigator {
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
 
-.navigator  ul li {
-    margin: 60px 0;
-}
-
-.navigator ul li:first-child {
-    margin-top: 0;
-}
-
-.navigator ul li:last-child {
-    margin-top: 0;
-}
-
-.navigator ul li a{
-    color: #ffffff;
-    border: solid 2px #ffffff;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navigator::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background-color: #ffffff;
-    z-index: 0;
-}
-
-.navigator ul {
-    z-index: 1;
-}
-
-.navigator ul li a:hover, 
-.navigator ul li a.active {
-    color: #B9001F; 
-    background-color: #ffffff;
-
-    /* border-style: double;
-    border-width: 4px;
-    border-color: #ffffff; */
-}
-
-.navigator-icon {
-    position: absolute;
-    top: -20px;
-}
 .secao-content{
     width: 100%;
     height: 100%;
     /* background-color: rgb(228, 207, 20); */
     padding-left: 30px;
+    position: relative;
 }
 
 .secao-content img {
     width: 680px;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .informacoes {
@@ -98,36 +80,39 @@ body {
     background: #000000CC;
     border-radius: 1rem;
     padding: 20px;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
-.button1{
-    width: 159px;
-    height: 30px;
-    background: #E71418;
-    font-size: 0.8rem;
-    gap: 0px;
-    border-radius: 41px;
-    border: none;
+.informacoes-button ul{
+    display: flex;
+    gap: 20px;
 }
-.button2{
-    width: 219px;
-    height: 30px;
-    background: #E71418;
-    font-size: 0.8rem;
-    gap: 0px;
-    border-radius: 41px;
-    border: none;
-    margin-left: 5%;
+.informacoes-button ul li{
+    /* background: #e7141800; */
+    color: #E71418;
+    border-left: 5px solid #E71418;
+    border-radius: 30px;
+    padding: 1% 2%;
+    display: flex;
+    align-items: center;
+    
+    gap: 5px;
 }
+
+.informacoes-button ul li img{
+    width: 25px;
+    margin-top: -5px;
+}
+
 
 .informacoes p {
     font-size: 0.8rem;
     margin-top: 2%;
 }
 
+
 .assistir{
-    background: #030303;
+    background: #03030328;
     width: 190px;
     height: 40px;
     display: flex;
