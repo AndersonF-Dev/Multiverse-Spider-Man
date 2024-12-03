@@ -21,11 +21,11 @@
 
 .navigator ul li a{
     color: #ffffff;
-    border: solid 2px #ffffff;
+    border: solid 2px #020202;
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #B9001F;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,10 +49,18 @@
 .navigator ul li a.active {
     color: #B9001F; 
     background-color: #ffffff;
-
+    border: 0.1875rem solid #B9001F;
+    outline: 0.125rem solid #ffffff;
     /* border-style: double;
     border-width: 4px;
     border-color: #ffffff; */
+}
+
+.active {
+    color: #B9001F;
+    background-color: #ffffff;
+    border: 0.1875rem solid #B9001F;
+    outline: 0.125rem solid #ffffff; /* para colocar uma borda branca */
 }
 
 .navigator-icon {

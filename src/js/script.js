@@ -22,12 +22,13 @@ document.addEventListener("DOMContentLoaded", addEventListenersToCards, false);
 
 
 function selectCarouselItem(selectedButtonElement){
-     const selecteidItem = selectedButtonElement.id;
-     const carousel = document.querySelector('.cards-carousel');
-     const transform = carousel.style.transform;
-     const rotateY = transform.match(/rotateY\((-?\d+deg)\)/i);
-     const rotateYDeg = -120 * (Number(selecteidItem) - 1);
-     const newTtransform = transform.replace(rotateY[0], `rotatey(${rotateYDeg}deg)`);
+    const selecteidItem = selectedButtonElement.id;
+    const carousel = document.querySelector('.cards-carousel');
+    const transform = carousel.style.transform;
+    const rotateY = transform.match(/rotateY\((-?\d+deg)\)/i);
+    const rotateYDeg = -120 * (Number(selecteidItem) - 1);
+    const newTtransform = transform.replace(rotateY[0], `rotatey(${rotateYDeg}deg)`);
+    //console.log('Selecionando', newTtransform);
      
      carousel.style.transform = newTtransform;
 
@@ -35,3 +36,4 @@ function selectCarouselItem(selectedButtonElement){
      activeButtonElement.classList.remove('controller-button-active');
      selectedButtonElement.classList.add('controller-button-active');
 }
+
